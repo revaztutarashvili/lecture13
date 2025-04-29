@@ -5,6 +5,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Person {
 
+    private String name;
+
     public String getName() {
         return name;
     }
@@ -13,16 +15,16 @@ public class Person {
         this.name = name;
     }
 
-    private String name;
-
-    public String getBirthDate() {
-        return birthDate;
+    public String getSayHi() {
+        return sayHi;
     }
 
-    public void setBirthDate(String birthDate) {
-        this.birthDate = birthDate;
+    public void setSayHi(String sayHi) {
+        this.sayHi = sayHi;
     }
 
-    private String birthDate;
+    private String sayHi;
+
+
 
 }
